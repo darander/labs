@@ -1,0 +1,4 @@
+kconf hardware lab-qemuarm.cfg
+
+kconf hardware lab-qemuarm-user-config.cfg
+include lab-qemuarm-user-patches.scc

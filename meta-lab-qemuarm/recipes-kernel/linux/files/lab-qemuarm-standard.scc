@@ -1,0 +1,8 @@
+define KMACHINE lab-qemuarm
+define KTYPE standard
+define KARCH arm
+
+include ktypes/standard/standard.scc
+branch lab-qemuarm
+
+include lab-qemuarm.scc
