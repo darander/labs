@@ -2,7 +2,7 @@ diff --git a/drivers/misc/Kconfig b/drivers/misc/Kconfig
 index 6a1a092..b6165b6 100644
 --- a/drivers/misc/Kconfig
 +++ b/drivers/misc/Kconfig
-@@ -392,6 +392,11 @@ config HMC6352
+@@ -381,6 +381,11 @@ config HMC6352
  	  This driver provides support for the Honeywell HMC6352 compass,
  	  providing configuration and heading data via sysfs.
  
@@ -11,16 +11,16 @@ index 6a1a092..b6165b6 100644
 +	help
 +	  This driver provides a silly message for testing Yocto.
 +
- config EP93XX_PWM
- 	tristate "EP93xx PWM support"
- 	depends on ARCH_EP93XX
+ config DS1682
+ 	tristate "Dallas DS1682 Total Elapsed Time Recorder with Alarm"
+ 	depends on I2C
 diff --git a/drivers/misc/Makefile b/drivers/misc/Makefile
 index 3e1d801..11384d8 100644
 --- a/drivers/misc/Makefile
 +++ b/drivers/misc/Makefile
-@@ -36,6 +36,7 @@ obj-$(CONFIG_TI_DAC7512)	+= ti_dac7512.o
+@@ -37,6 +37,7 @@ obj-$(CONFIG_TI_DAC7512)	+= ti_dac7512.o
+ obj-$(CONFIG_TI_DAC7512)	+= ti_dac7512.o
  obj-$(CONFIG_C2PORT)		+= c2port/
- obj-$(CONFIG_IWMC3200TOP)      += iwmc3200top/
  obj-$(CONFIG_HMC6352)		+= hmc6352.o
 +obj-$(CONFIG_YOCTO_TESTMOD)	+= yocto-testmod.o
  obj-y				+= eeprom/
