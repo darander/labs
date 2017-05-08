@@ -1,2 +1,2 @@
-#FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}-${PV}:"
+#FILESEXTRAPATHS_prepend := "${THISDIR}/${BPN}:"
 
